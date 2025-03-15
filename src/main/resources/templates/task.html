@@ -29,5 +29,9 @@
     </tbody>
 </table>
 
+<p th:if="${session.currentUser != null}">
+    <a href="index.html" th:href="@{/logout}">Logout</a>
+</p>
+
 </body>
 </html>

@@ -21,6 +21,10 @@
     </div>
 </form>
 
+<div th:if="${session.currentUser != null}">
+    <span th:text="${session.currentUser.username}"></span> |
+    <a href="index.html" th:href="@{/logout}">Logout</a>
+</div>
 
 </body>
 </html>
