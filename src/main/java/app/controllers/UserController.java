@@ -21,7 +21,7 @@ public class UserController {
 
     private static void logout(Context ctx) {
         ctx.req().getSession().invalidate();
-        ctx.render("index.html");
+        ctx.redirect("/");
     }
 
     public static void login(Context ctx, ConnectionPool connectionPool) {
